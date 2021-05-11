@@ -1,0 +1,17 @@
+# Pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# Useful aliases
+alias lsa="ls -la"
+
+# Dotfiles
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+# Doom Emacs
+export PATH="$PATH:$HOME/.emacs.d/bin"
+alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs "$@""
