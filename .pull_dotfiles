@@ -1,0 +1,7 @@
+#!/bin/bash
+
+shopt -s expand_aliases &&
+cd ~/.dotfiles &&
+git ls-files | xargs -0 -I {} /bin/rm -f '~/{}' &&
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout &&
+cd ~
