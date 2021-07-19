@@ -15,3 +15,8 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # Doom Emacs
 export PATH="$PATH:$HOME/.emacs.d/bin"
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs "$@""
+
+# Fix LS colors
+unset LSCOLORS
+export CLICOLOR=1
+export CLICOLOR_FORCE=1
