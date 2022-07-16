@@ -224,4 +224,10 @@ gaps inner 8
 # remove title bar
 default_border pixel 3
 
+# Get volume buttons working
+# pavolume script in /bin
+bindsym XF86AudioMute        exec --no-startup-id "/bin/pavolume toggle"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "/bin/pavolume +5%"
+bindsym XF86AudioLowerVolume exec --no-startup-id "/bin/pavolume -5%"
+
 include /etc/sway/config.d/*

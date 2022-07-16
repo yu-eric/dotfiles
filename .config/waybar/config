@@ -27,7 +27,8 @@
     ],
     "modules-right": [
         "network",
-        "memory",
+	"pulseaudio",
+        //"memory",
         "cpu",
         "temperature",
         //"custom/keyboard-layout",
@@ -108,6 +109,11 @@
         "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}"
+    },
+
+    "pulseaudio": {
+	"format": " {volume}%",
+	"format-muted": "ﱝ"
     },
 
     "sway/mode": {
