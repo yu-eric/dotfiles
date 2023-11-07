@@ -1,0 +1,6 @@
+[eric]
+config_file = /home/eric/.config/onedrive/accounts/eric/config
+auto_sync = True
+account_type = Business
+free_space = 4.8TiB
+
