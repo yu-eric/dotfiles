@@ -151,7 +151,7 @@ client.urgent           #2f343a #900000 #ffffff #900000   #900000
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
+    bindsym $mod+s layout toggle split
     bindsym $mod+w layout tabbed
     #bindsym $mod+e layout toggle split
 
